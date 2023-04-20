@@ -29,7 +29,7 @@ namespace Test_Trigger
         void sayac()
         {
             baglanti.Open();
-            SqlCommand komut = new SqlCommand("Select * from tblsayac",baglanti);
+            SqlCommand komut = new SqlCommand("Select * from tblsayac", baglanti);
             SqlDataReader dr = komut.ExecuteReader();
             while (dr.Read())
             {
@@ -48,7 +48,7 @@ namespace Test_Trigger
         private void BtnEkle_Click(object sender, EventArgs e)
         {
             baglanti.Open();
-            SqlCommand komut = new SqlCommand("insert into TBLKITAPLAR (AD,YAZARI,SAYFA,YAYINEVI,TUR) values (@P1,@P2,@P3,@P4,@P5)",baglanti);
+            SqlCommand komut = new SqlCommand("insert into TBLKITAPLAR (AD,YAZARI,SAYFA,YAYINEVI,TUR) values (@P1,@P2,@P3,@P4,@P5)", baglanti);
             komut.Parameters.AddWithValue("@p1", TxtAd.Text);
             komut.Parameters.AddWithValue("@p2", TxtYazar.Text);
             komut.Parameters.AddWithValue("@p3", TxtSayfa.Text);
@@ -56,7 +56,7 @@ namespace Test_Trigger
             komut.Parameters.AddWithValue("@p5", TxtTur.Text);
             komut.ExecuteNonQuery();
             baglanti.Close();
-            MessageBox.Show("Kitap Sisteme Eklendi","Bilgi",MessageBoxButtons.OK, MessageBoxIcon.Information);
+            MessageBox.Show("Kitap Sisteme Eklendi", "Bilgi", MessageBoxButtons.OK, MessageBoxIcon.Information);
             listele();//güncel halini görmek için.
             sayac();// güncel halini görmek için.
         }
@@ -83,5 +83,29 @@ namespace Test_Trigger
             listele();
             sayac();
         }
-    }
+    } /*Triger Komutları.
+       *ALTER trigger [dbo].[arttir] 
+        on [dbo].[TBLKITAPLAR]
+        after insert 
+        as
+        update TBLSAYAC set ADET = ADET+1
+      */
+    /*
+     *ALTER trigger [dbo].[azalt]
+        on [dbo].[TBLKITAPLAR]  
+        after delete
+        as
+        update TBLSAYAC set ADET = ADET-1 
+     */
+    /*
+     * ALTER trigger [dbo].[yedek]
+    on [dbo].[TBLKITAPLAR]
+    after delete
+    as
+    declare @kitapad varchar(50)
+    declare @kitapyazar varchar (50)
+
+    select @kitapad=Ad, @kitapyazar=YAZARI from deleted
+    insert into TBLKITAPYEDEK(AD,YAZAR) values (@kitapad,@kitapad)
+     */
 }
