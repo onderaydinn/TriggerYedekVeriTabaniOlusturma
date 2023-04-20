@@ -1,0 +1,11 @@
+C:\Users\ASUS\Desktop\Software\Project\Test_Trigger\Test_Trigger\bin\Debug\Test_Trigger.exe.config
+C:\Users\ASUS\Desktop\Software\Project\Test_Trigger\Test_Trigger\bin\Debug\Test_Trigger.exe
+C:\Users\ASUS\Desktop\Software\Project\Test_Trigger\Test_Trigger\bin\Debug\Test_Trigger.pdb
+C:\Users\ASUS\Desktop\Software\Project\Test_Trigger\Test_Trigger\obj\Debug\Test_Trigger.csproj.AssemblyReference.cache
+C:\Users\ASUS\Desktop\Software\Project\Test_Trigger\Test_Trigger\obj\Debug\Test_Trigger.csproj.SuggestedBindingRedirects.cache
+C:\Users\ASUS\Desktop\Software\Project\Test_Trigger\Test_Trigger\obj\Debug\Test_Trigger.Form1.resources
+C:\Users\ASUS\Desktop\Software\Project\Test_Trigger\Test_Trigger\obj\Debug\Test_Trigger.Properties.Resources.resources
+C:\Users\ASUS\Desktop\Software\Project\Test_Trigger\Test_Trigger\obj\Debug\Test_Trigger.csproj.GenerateResource.cache
+C:\Users\ASUS\Desktop\Software\Project\Test_Trigger\Test_Trigger\obj\Debug\Test_Trigger.csproj.CoreCompileInputs.cache
+C:\Users\ASUS\Desktop\Software\Project\Test_Trigger\Test_Trigger\obj\Debug\Test_Trigger.exe
+C:\Users\ASUS\Desktop\Software\Project\Test_Trigger\Test_Trigger\obj\Debug\Test_Trigger.pdb
